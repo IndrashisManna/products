@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 2 Details</title>
+    <style>
+        /* Apply some basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .left-section {
+            width: 50%;
+        }
+        
+        .right-section {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .product-image {
+            display: block;
+            max-width: 100%;
+            height: 400px;
+        }
+
+        .buy-buttons button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: #FF9900;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .buy-buttons button:hover {
+      background-color: #FFAD33;
+    }
+        
+        .buttons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .product-details {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .product-details strong {
+            font-weight: bold;
+        }
+
+        .item-details {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .item-details strong {
+        font-weight: bold;
+    }
+
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        
+        .toolbar-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .toolbar-links a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid transparent;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        /* Hover effect for links */
+        .toolbar-links a:hover {
+            background-color: #0abab5;
+            color: white;
+            border-color: #0abab5;
+        }
+        
+        .toolbar-links input[type="text"] {
+            padding: 12px;
+            width: 500px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-right: 20px;
+        }
+        
+        .toolbar-logo img {
+            height: 55px;
+            /* Adjust width as needed */
+        }
+ 
+        .search-bar {
+            flex: 1; /* Take up remaining space */
+            margin: 0 auto; /* Center the search bar */
+            max-width: 1500px; /* Set maximum width */
+            padding: 0 30px; /* Add some padding */
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px; /* Adjust font size */
+        }
+
+        .product-headings {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .offers-section {
+            margin-top: 50px;
+            margin-left: 300px;
+            display: flex;
+            flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+            gap: 20px; /* Spacing between boxes */
+            justify-content: flex-end; /* Align content to the right */
+            padding-right: 20px; /* Adjust right padding */
+            max-width: 50%; /* Set a maximum width for the offers section */
+            box-sizing: border-box; /* Include padding in the width */
+            margin-bottom: 50px;
+        }
+
+        .offer-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 200px;
+            height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="toolbar">
+        <div class="toolbar-links">
+            <div class="toolbar-logo">
+                <!-- Replace 'logo.png' with the path to your logo image -->
+                <img src="https://static.vecteezy.com/system/resources/previews/005/447/960/original/sunglasses-logo-design-vector.jpg" alt="Logo">
+            </div>
+            <a href="index.html">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+            <input type="text" placeholder="Search for products...">
+        </div>
+        
+        <div class="toolbar-links">
+            <a href="#">Login</a>
+            <a href="#">Cart</a>
+        </div>
+    </div>
+
+    <div class="product-headings">
+        <h2>Men's UV Protected Grey Alloy Metal Rectangular sunglass</h2>
+        <!-- Other product headings or details -->
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <!-- Sunglass Image -->
+            <img class="product-image" src="https://rukminim2.flixcart.com/image/832/832/k5zn9u80/sunglass/q/m/h/m-01711-redex-original-imafghf24nr2ep9e.jpeg?q=70" alt="Sunglasses">
+            
+            <!-- Buy Now, Add to Cart, Price -->
+            <div class="buttons">
+                
+                <div class="buy-buttons">
+                    <button onclick="window.open('checkout.html', '_blank')">Buy Now</button>
+                    <button onclick="addToCart()">Add to Cart</button>
+                  </div>
+                <big><p>Price: Rs. 999</p></big>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <!-- Product Details -->
+            <div class="product-details">
+                <strong>About this item</strong><br><br>
+                
+                <strong>Care Instructions:</strong><br>
+                Keeping your eyewear clean and well-maintained is essential. Simply spray some Aqualens solution on the lenses and wipe them with a microfiber cloth to keep them smudge-free.<br><br>
+                <strong>Lens Technology:</strong><br>
+                Features shiny black solid lenses with 100% UV protection coating, scratch-resistant technology, feather-lightweight, and highly durable frame material.<br><br>
+                <strong>Frame Size:</strong><br>
+                Large | Frame Height: 59 | Frame width: 144 | Frame Dimensions: 59 14 144<br><br>
+                <strong>Frame Style:</strong><br>
+                Rectangular sunglasses are timeless and often evoke a sense of academic flare. It offers a variety of colors in this retro-cool frame style for men.<br><br>
+                <strong>About the brand:</strong><br>
+                IDEE eyewear features some of the most stylish and trendy sunglasses for men & women. Available in a variety of colours and shapes, it ensures you always stand out with your unique style<br><br>
+
+                <!-- Other details... -->
+            </div>
+            
+            <!-- Trust signals -->
+            <div class="trust-signals">
+        <img src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-cod._CB485937110_.png" alt="Pay on Delivery">
+        <img src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png" alt="10 Days Return & Exchange">
+        <img src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-top-brand._CB617044271_.png" alt="Top Brand">
+        <img src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/trust_icon_free_shipping_81px._CB630870460_.png" alt="Free Delivery">
+        <img src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/Secure-payment._CB650126890_.png" alt="Secure Transaction">
+      </div> 
+                <!-- Trust signals content here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="offers-section">
+        <h2>Offers</h2>
+        <div class="offer-box">
+            <!-- Offer 1 details -->
+            Offer 1: 20% off on selected items
+        </div>
+        <div class="offer-box">
+            <!-- Offer 2 details -->
+            Offer 2: Buy 1 Get 1 Free
+        </div>
+
+        <div class="offer-box">
+            <!-- Offer 2 details -->
+            Offer 3: Get 15% off with HDFC credit card
+        </div>
+
+        <div class="offer-box">
+            <!-- Offer 2 details -->
+            Offer 4: Get No Cost emi with SBI credit card
+        </div>
+
+        <div class="offer-box">
+            <!-- Offer 2 details -->
+            Offer 5: Get 5% cashback With Google Pay
+        </div>
+
+        <div class="offer-box">
+            <!-- Offer 2 details -->
+            Offer 6: Claim upto 18% GST
+        </div>
+        <!-- Add more offer boxes as needed -->
+    </div>
+
+    <script>
+        function addToCart() {
+          // Add logic here to handle adding the product to the cart
+          alert('Product added to cart!');
+          // Redirect to the cart page or continue shopping
+        }
+      </script>
+</body>
+</html>
