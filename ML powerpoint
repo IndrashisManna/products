@@ -1,0 +1,102 @@
+Sub CreateMachineLearningPresentation()
+
+    Dim pptApp As Object
+    Dim pptPres As Object
+    Dim slideIndex As Integer
+    Dim slide As Object
+    Dim shape As Object
+
+    ' Create a new PowerPoint application and presentation
+    Set pptApp = CreateObject("PowerPoint.Application")
+    pptApp.Visible = True
+    Set pptPres = pptApp.Presentations.Add
+
+    ' Slide 1: Title Slide
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 1) ' 1 = ppLayoutTitle
+    slide.Shapes(1).TextFrame.TextRange.Text = "Distance-based Methods in Machine Learning"
+    slide.Shapes(2).TextFrame.TextRange.Text = "Name: Indrashis Manna" & vbCrLf & _
+                                               "Reg. NO.: 212760100110162" & vbCrLf & _
+                                               "Roll No.: 27600121081" & vbCrLf & _
+                                               "Subject: PEC-CS701E Machine Learning" & vbCrLf & _
+                                               "Department: CSE" & vbCrLf & _
+                                               "Year: 4th Year, Sec: " & vbCrLf & _
+                                               "Academic Year: 2024-25" & vbCrLf & _
+                                               "Year: 2021-22"
+
+    ' Slide 2: Introduction to Distance-based Methods
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Introduction to Distance-based Methods"
+    slide.Shapes(2).TextFrame.TextRange.Text = "Distance-based methods are a class of algorithms used in machine learning and pattern recognition that rely on distance metrics to classify data points."
+
+    ' Slide 3: Types of Distance-based Methods
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Types of Distance-based Methods"
+    slide.Shapes(2).TextFrame.TextRange.Text = "1. K-Nearest Neighbors (KNN)" & vbCrLf & _
+                                               "2. Nearest Centroid Classifier" & vbCrLf & _
+                                               "3. Radius Neighbors Classifier"
+
+    ' Slide 4: K-Nearest Neighbors (KNN)
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "K-Nearest Neighbors (KNN)"
+    slide.Shapes(2).TextFrame.TextRange.Text = "KNN is a simple, instance-based learning algorithm that classifies a data point based on the majority class among its nearest neighbors."
+
+    ' Slide 5: Nearest Centroid Classifier
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Nearest Centroid Classifier"
+    slide.Shapes(2).TextFrame.TextRange.Text = "The nearest centroid classifier classifies a data point by assigning it to the class of the nearest centroid, which is the mean position of all the points in that class."
+
+    ' Slide 6: Radius Neighbors Classifier
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Radius Neighbors Classifier"
+    slide.Shapes(2).TextFrame.TextRange.Text = "Radius Neighbors Classifier classifies data points based on a fixed-radius hyper-sphere around each data point, where the majority class within the sphere determines the classification."
+
+    ' Slide 7: Distance Metrics
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Distance Metrics"
+    slide.Shapes(2).TextFrame.TextRange.Text = "Common distance metrics used include:" & vbCrLf & _
+                                               "1. Euclidean Distance" & vbCrLf & _
+                                               "2. Manhattan Distance" & vbCrLf & _
+                                               "3. Minkowski Distance" & vbCrLf & _
+                                               "4. Hamming Distance"
+
+    ' Slide 8: Application of Distance-based Methods
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Applications of Distance-based Methods"
+    slide.Shapes(2).TextFrame.TextRange.Text = "Distance-based methods are used in:" & vbCrLf & _
+                                               "1. Image Recognition" & vbCrLf & _
+                                               "2. Recommender Systems" & vbCrLf & _
+                                               "3. Text Classification" & vbCrLf & _
+                                               "4. Medical Diagnosis"
+
+    ' Slide 9: Advantages and Disadvantages
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Advantages and Disadvantages"
+    slide.Shapes(2).TextFrame.TextRange.Text = "Advantages:" & vbCrLf & _
+                                               "1. Simple and intuitive" & vbCrLf & _
+                                               "2. Effective with small datasets" & vbCrLf & _
+                                               "Disadvantages:" & vbCrLf & _
+                                               "1. Computationally expensive with large datasets" & vbCrLf & _
+                                               "2. Sensitive to noisy data"
+
+    ' Slide 10: Conclusion
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 2) ' 2 = ppLayoutText
+    slide.Shapes(1).TextFrame.TextRange.Text = "Conclusion"
+    slide.Shapes(2).TextFrame.TextRange.Text = "Distance-based methods play a crucial role in machine learning, offering powerful tools for classification and prediction based on the concept of similarity."
+
+    ' Final slide: Thank You!
+    slideIndex = slideIndex + 1
+    Set slide = pptPres.Slides.Add(slideIndex, 3) ' 3 = ppLayoutTitleOnly
+    slide.Shapes(1).TextFrame.TextRange.Text = "Thank You!"
+    
+End Sub
+
